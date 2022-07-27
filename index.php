@@ -45,7 +45,7 @@ $memento->awards = '2002 - Premio Oscar: Candidatura alla migliore sceneggiatura
                     2000 - Festival del cinema americano di Deauville: Premio speciale della giuria, premio della critica internazionale, premio CinéLive Award;<br>
                     2000 - Catalonian International Film Festival: Premio per la miglior sceneggiatura;<br>
                     2001 - Sundance Film Festival: Premio Waldo Salt Screenwriting Award per la miglior sceneggiatura;<br>
-                    2001 - British Independent Film Awards 2001: Miglior film straniero in lingua inglese<;br>
+                    2001 - British Independent Film Awards 2001: Miglior film straniero in lingua inglese;<br>
                     2001 - National Board of Review of Motion Pictures: Migliori dieci film dell\'anno.';
 
 // Istance 2
