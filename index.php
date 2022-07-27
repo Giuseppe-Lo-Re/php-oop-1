@@ -127,9 +127,7 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
         <img src="<?php echo $memento->poster; ?>" alt="<?php echo $memento->title; ?>">
     </div>
 
-    <br>
-
-    <div>
+    <h4>
         <!-- Genre -->
         Film <?php echo $memento->genre; ?>
 
@@ -141,12 +139,15 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
 
         <!-- Duration -->
         della durata di <?php echo $memento->duration; ?> minuti.
-    </div>
-
-    <br>
+    </h4>
 
     <div>
-        Trama: <br>
+        <strong>
+            Trama:
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Plot -->
             <?php echo $memento->tellMeThePlot(); ?>
@@ -156,7 +157,12 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
     <br>
 
     <div>
-        Premi e riconoscimenti: <br>
+        <strong>
+            Premi e riconoscimenti: 
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Awards -->
             <?php echo $memento->tellMeAboutAwards(); ?>
@@ -176,7 +182,9 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
         <img src="<?php echo $eternalsunshineofthespotlessmind->poster; ?>" alt="<?php echo $eternalsunshineofthespotlessmind->title; ?>">
     </div>
 
-    <div>
+    <br>
+
+    <h4>
         <!-- Genre -->
         Film <?php echo $eternalsunshineofthespotlessmind->genre; ?>
 
@@ -188,12 +196,15 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
 
         <!-- Duration -->
         della durata di <?php echo $eternalsunshineofthespotlessmind->duration; ?> minuti.
-    </div>
-
-    <br>
+    </h4>
 
     <div>
-        Trama: <br>
+        <strong>
+            Trama: 
+        </strong>
+        
+        <br>
+        
         <em>
             <!-- Function Plot -->
             <?php echo $eternalsunshineofthespotlessmind->tellMeThePlot(); ?>
@@ -201,7 +212,12 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
     </div>
     <br>
     <div>
-        Premi e riconoscimenti: <br>
+        <strong>
+            Premi e riconoscimenti: 
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Awards -->
             <?php echo $eternalsunshineofthespotlessmind->tellMeAboutAwards(); ?>
@@ -221,7 +237,7 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
         <img src="<?php echo $interstellar->poster; ?>" alt="<?php echo $interstellar->title; ?>">
     </div>
 
-    <div>
+    <h4>
         <!-- Genre -->
         Film <?php echo $interstellar->genre; ?>
 
@@ -233,20 +249,31 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
 
         <!-- Duration -->
         della durata di <?php echo $interstellar->duration; ?> minuti.
-    </div>
+    </h4>
 
-    <br>
 
     <div>
-        Trama: <br>
+        <strong>
+            Trama:
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Plot -->
             <?php echo $interstellar->tellMeThePlot(); ?>
         </em>
     </div>
+
     <br>
+
     <div>
-        Premi e riconoscimenti: <br>
+        <strong>
+            Premi e riconoscimenti: 
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Awards -->
             <?php echo $interstellar->tellMeAboutAwards(); ?>
@@ -266,7 +293,7 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
         <img src="<?php echo $joker->poster; ?>" alt="<?php echo $joker->title; ?>">
     </div>
 
-    <div>
+    <h4>
         <!-- Genre -->
         Film <?php echo $joker->genre; ?>
 
@@ -278,12 +305,15 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
 
         <!-- Duration -->
         della durata di <?php echo $joker->duration; ?> minuti.
-    </div>
-
-    <br>
+    </h4>
 
     <div>
-        Trama: <br>
+        <strong>
+            Trama:
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Plot -->
             <?php echo $joker->tellMeThePlot(); ?>
@@ -291,7 +321,12 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
     </div>
     <br>
     <div>
-        Premi e riconoscimenti: <br>
+        <strong>
+            Premi e riconoscimenti: 
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Awards -->
             <?php echo $joker->tellMeAboutAwards(); ?>
@@ -311,7 +346,9 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
         <img src="<?php echo $perfettisconosciuti->poster; ?>" alt="<?php echo $perfettisconosciuti->title; ?>">
     </div>
 
-    <div>
+    <br>
+
+    <h4>
         <!-- Genre -->
         Film <?php echo $perfettisconosciuti->genre; ?>
 
@@ -323,12 +360,17 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
 
         <!-- Duration -->
         della durata di <?php echo $perfettisconosciuti->duration; ?> minuti.
-    </div>
+    </h4>
 
     <br>
 
     <div>
-        Trama: <br>
+        <strong>
+            Trama:
+        </strong> 
+
+        <br>
+
         <em>
             <!-- Function Plot -->
             <?php echo $perfettisconosciuti->tellMeThePlot(); ?>
@@ -338,7 +380,12 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
     <br>
 
     <div>
-        Premi e riconoscimenti: <br>
+        <strong>
+            Premi e riconoscimenti: 
+        </strong> 
+
+        <br>
+        
         <em>
             <!-- Function Awards -->
             <?php echo $perfettisconosciuti->tellMeAboutAwards(); ?>
