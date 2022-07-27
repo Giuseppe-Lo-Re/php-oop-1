@@ -1,5 +1,7 @@
 <?php
 class Movie {
+    public $poster;
+
     public $title;
 
     public $genre;
@@ -30,6 +32,7 @@ class Movie {
 }
 
 $memento = new Movie('Memento');
+$memento->poster = 'https://pad.mymovies.it/filmclub/2001/01/012/locandina.jpg';
 $memento->genre = 'Thriller';
 $memento->director = 'Christopher Nolan';
 $memento->duration = '113';
@@ -47,6 +50,7 @@ $memento->awards = '2002 - Premio Oscar: Candidatura alla migliore sceneggiatura
 
 
 $eternalsunshineofthespotlessmind = new Movie('Eternal Sunshine of the Spotless Mind');
+$eternalsunshineofthespotlessmind->poster = 'https://pad.mymovies.it/filmclub/2004/10/012/locandina.jpg';
 $eternalsunshineofthespotlessmind->genre = 'Drammatico';
 $eternalsunshineofthespotlessmind->director = 'Michel Gondry';
 $eternalsunshineofthespotlessmind->duration = '108';
@@ -58,6 +62,7 @@ $eternalsunshineofthespotlessmind->awards = '2005 - Premio Oscar Miglior scenegg
                                              2004 - National Board of Review Miglior sceneggiatura originale.';
 
 $interstellar = new Movie ('Interstellar');
+$interstellar->poster = 'https://pad.mymovies.it/filmclub/2014/01/001/locandina.jpg';
 $interstellar->genre = 'Fantascienza';
 $interstellar->director = 'Christopher Nolan';
 $interstellar->duration = '168';
@@ -68,6 +73,7 @@ $interstellar->awards = '2015 - Premio Oscar Migliori effetti speciali a Paul Fr
                          2015 - Saturn Awards Miglior film di fantascienza - Miglior attore emergente a Mackenzie Foy - Miglior sceneggiatura a Christopher Nolan e Jonathan Nolan - Miglior colonna sonora a Hans Zimmer.';
 
 $joker = new Movie ('Joker');
+$joker->poster = 'https://pad.mymovies.it/filmclub/2018/06/066/locandina.jpg';
 $joker->genre = 'Drammatico';
 $joker->director = 'Todd Phillips';
 $joker->duration = '122';
@@ -80,6 +86,7 @@ $joker->awards = '2020 - Premi Oscar Miglior attore a Joaquin Phoenix - Migliore
                   2019 - Satellite Award - Migliore sceneggiatura non originale a Todd Phillips e Scott Silver - Migliore colonna sonora originale a Hildur Guðnadóttir.';
 
 $perfettisconosciuti = new Movie ('Perfetti Sconosciuti');
+$perfettisconosciuti->poster = 'https://pad.mymovies.it/filmclub/2016/01/005/locandina.jpg';
 $perfettisconosciuti->genre = 'Commedia';
 $perfettisconosciuti->director = 'Paolo Genovese';
 $perfettisconosciuti->duration = '97';
@@ -101,51 +108,91 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
 </head>
 <body>
 
+    <!-- H1 Title -->
     <h1>
         Tra i miei film preferiti:
     </h1>
      
     <!-- Movie 1 -->
-    <h3>
+    <h2>
+        <!-- Title -->
         - <?php echo $memento->title; ?> 
-    </h3>
+    </h2>
 
     <div>
+        <!-- Poster -->
+        <img src="<?php echo $memento->poster; ?>" alt="<?php echo $memento->title; ?>">
+    </div>
+
+    <br>
+
+    <div>
+        <!-- Genre -->
         Film <?php echo $memento->genre; ?>
+
+        <!-- Release Year -->
         del <?php echo $memento->releaseyear; ?>
+
+        <!-- Director -->
         scritto e diretto da <?php echo $memento->director; ?>,
+
+        <!-- Duration -->
         della durata di <?php echo $memento->duration; ?> minuti.
     </div>
+
     <br>
+
     <div>
         Trama: <br>
         <em>
+            <!-- Function Plot -->
             <?php echo $memento->tellMeThePlot(); ?>
         </em>
     </div>
+
     <br>
+
     <div>
         Premi e riconoscimenti: <br>
         <em>
+            <!-- Function Awards -->
             <?php echo $memento->tellMeAboutAwards(); ?>
         </em>
     </div>
 
+    <br>
+
     <!-- Movie 2 -->
-    <h3>
+    <!-- Title -->
+    <h2>
         - <?php echo $eternalsunshineofthespotlessmind->title; ?> 
-    </h3>
+    </h2>
 
     <div>
+        <!-- Poster -->
+        <img src="<?php echo $eternalsunshineofthespotlessmind->poster; ?>" alt="<?php echo $eternalsunshineofthespotlessmind->title; ?>">
+    </div>
+
+    <div>
+        <!-- Genre -->
         Film <?php echo $eternalsunshineofthespotlessmind->genre; ?>
+
+        <!-- Release Year -->
         del <?php echo $eternalsunshineofthespotlessmind->releaseyear; ?>
+
+        <!-- Director -->
         scritto e diretto da <?php echo $eternalsunshineofthespotlessmind->director; ?>,
+
+        <!-- Duration -->
         della durata di <?php echo $eternalsunshineofthespotlessmind->duration; ?> minuti.
     </div>
+
     <br>
+
     <div>
         Trama: <br>
         <em>
+            <!-- Function Plot -->
             <?php echo $eternalsunshineofthespotlessmind->tellMeThePlot(); ?>
         </em>
     </div>
@@ -153,25 +200,44 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
     <div>
         Premi e riconoscimenti: <br>
         <em>
+            <!-- Function Awards -->
             <?php echo $eternalsunshineofthespotlessmind->tellMeAboutAwards(); ?>
         </em>
     </div>
 
+    <br>
+
     <!-- Movie 3 -->
-    <h3>
+    <h2>
+        <!-- Title -->
         - <?php echo $interstellar->title; ?> 
-    </h3>
+    </h2>
 
     <div>
+        <!-- Poster -->
+        <img src="<?php echo $interstellar->poster; ?>" alt="<?php echo $interstellar->title; ?>">
+    </div>
+
+    <div>
+        <!-- Genre -->
         Film <?php echo $interstellar->genre; ?>
+
+        <!-- Release Year -->
         del <?php echo $interstellar->releaseyear; ?>
+
+        <!-- Director -->
         scritto e diretto da <?php echo $interstellar->director; ?>,
+
+        <!-- Duration -->
         della durata di <?php echo $interstellar->duration; ?> minuti.
     </div>
+
     <br>
+
     <div>
         Trama: <br>
         <em>
+            <!-- Function Plot -->
             <?php echo $interstellar->tellMeThePlot(); ?>
         </em>
     </div>
@@ -179,25 +245,44 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
     <div>
         Premi e riconoscimenti: <br>
         <em>
+            <!-- Function Awards -->
             <?php echo $interstellar->tellMeAboutAwards(); ?>
         </em>
     </div>
 
+    <br>
+
     <!-- Movie 4 -->
-    <h3>
+    <h2>
+        <!-- Title -->
         - <?php echo $joker->title; ?> 
-    </h3>
+    </h2>
 
     <div>
+        <!-- Poster -->
+        <img src="<?php echo $joker->poster; ?>" alt="<?php echo $joker->title; ?>">
+    </div>
+
+    <div>
+        <!-- Genre -->
         Film <?php echo $joker->genre; ?>
+
+        <!-- Release Year -->
         del <?php echo $joker->releaseyear; ?>
+
+        <!-- Director -->
         scritto e diretto da <?php echo $joker->director; ?>,
+
+        <!-- Duration -->
         della durata di <?php echo $joker->duration; ?> minuti.
     </div>
+
     <br>
+
     <div>
         Trama: <br>
         <em>
+            <!-- Function Plot -->
             <?php echo $joker->tellMeThePlot(); ?>
         </em>
     </div>
@@ -205,32 +290,54 @@ $perfettisconosciuti->awards = '2016 - David di Donatello Miglior film a Paolo G
     <div>
         Premi e riconoscimenti: <br>
         <em>
+            <!-- Function Awards -->
             <?php echo $joker->tellMeAboutAwards(); ?>
         </em>
     </div>
 
+    <br>
+
     <!-- Movie 5 -->
-    <h3>
+    <h2>
+        <!-- Title -->
         - <?php echo $perfettisconosciuti->title; ?> 
-    </h3>
+    </h2>
 
     <div>
+        <!-- Poster -->
+        <img src="<?php echo $perfettisconosciuti->poster; ?>" alt="<?php echo $perfettisconosciuti->title; ?>">
+    </div>
+
+    <div>
+        <!-- Genre -->
         Film <?php echo $perfettisconosciuti->genre; ?>
+
+        <!-- Release Year -->
         del <?php echo $perfettisconosciuti->releaseyear; ?>
+
+        <!-- Director -->
         scritto e diretto da <?php echo $perfettisconosciuti->director; ?>,
+
+        <!-- Duration -->
         della durata di <?php echo $perfettisconosciuti->duration; ?> minuti.
     </div>
+
     <br>
+
     <div>
         Trama: <br>
         <em>
+            <!-- Function Plot -->
             <?php echo $perfettisconosciuti->tellMeThePlot(); ?>
         </em>
     </div>
+
     <br>
+
     <div>
         Premi e riconoscimenti: <br>
         <em>
+            <!-- Function Awards -->
             <?php echo $perfettisconosciuti->tellMeAboutAwards(); ?>
         </em>
     </div>
