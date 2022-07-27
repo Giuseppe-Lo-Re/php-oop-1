@@ -1,16 +1,17 @@
 <?php
 class Movie {
-    public $poster;
 
     public $title;
+
+    public $poster;
 
     public $genre;
 
     public $director;
 
-    public $duration;
-
     public $releaseyear;
+
+    public $duration;
 
     public $plot;
 
@@ -27,10 +28,9 @@ class Movie {
     public function tellMeAboutAwards() {
         return $this->awards;
     }
-
-    
 }
 
+// Istance 1
 $memento = new Movie('Memento');
 $memento->poster = 'https://pad.mymovies.it/filmclub/2001/01/012/locandina.jpg';
 $memento->genre = 'Thriller';
@@ -48,7 +48,7 @@ $memento->awards = '2002 - Premio Oscar: Candidatura alla migliore sceneggiatura
                     2001 - British Independent Film Awards 2001: Miglior film straniero in lingua inglese<;br>
                     2001 - National Board of Review of Motion Pictures: Migliori dieci film dell\'anno.';
 
-
+// Istance 2
 $eternalsunshineofthespotlessmind = new Movie('Eternal Sunshine of the Spotless Mind');
 $eternalsunshineofthespotlessmind->poster = 'https://pad.mymovies.it/filmclub/2004/10/012/locandina.jpg';
 $eternalsunshineofthespotlessmind->genre = 'Drammatico';
@@ -61,6 +61,7 @@ $eternalsunshineofthespotlessmind->awards = '2005 - Premio Oscar Miglior scenegg
                                              2004 - Las Vegas Film Critics Society Miglior attrice a Kate Winslet - Miglior sceneggiatura;<br>
                                              2004 - National Board of Review Miglior sceneggiatura originale.';
 
+// Istance 3                                            
 $interstellar = new Movie ('Interstellar');
 $interstellar->poster = 'https://pad.mymovies.it/filmclub/2014/01/001/locandina.jpg';
 $interstellar->genre = 'Fantascienza';
@@ -72,6 +73,7 @@ $interstellar->awards = '2015 - Premio Oscar Migliori effetti speciali a Paul Fr
                          2015 - Empire Awards Miglior film Miglior regista a Christopher Nolan;<br>
                          2015 - Saturn Awards Miglior film di fantascienza - Miglior attore emergente a Mackenzie Foy - Miglior sceneggiatura a Christopher Nolan e Jonathan Nolan - Miglior colonna sonora a Hans Zimmer.';
 
+// Istance 4
 $joker = new Movie ('Joker');
 $joker->poster = 'https://pad.mymovies.it/filmclub/2018/06/066/locandina.jpg';
 $joker->genre = 'Drammatico';
@@ -85,6 +87,7 @@ $joker->awards = '2020 - Premi Oscar Miglior attore a Joaquin Phoenix - Migliore
                   2019 - Mostra internazionale d\'arte cinematografica Leone d\'oro al miglior film;<br>
                   2019 - Satellite Award - Migliore sceneggiatura non originale a Todd Phillips e Scott Silver - Migliore colonna sonora originale a Hildur Guðnadóttir.';
 
+// Istance 5
 $perfettisconosciuti = new Movie ('Perfetti Sconosciuti');
 $perfettisconosciuti->poster = 'https://pad.mymovies.it/filmclub/2016/01/005/locandina.jpg';
 $perfettisconosciuti->genre = 'Commedia';
